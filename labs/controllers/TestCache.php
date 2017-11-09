@@ -27,4 +27,14 @@ class TestCache extends CI_Controller {
       $data['title'] = $msg;
       $this->load->view('page_cache', $data);
     }
+    
+    public function testWinCache(){
+      $this->load->driver('cache');
+      if(! $msg = $this->cache->wincache->get('titleWin')){
+        $msg = "winCache working!!!";
+        $this->cache->wincache->save('titleWin', $msg, 20);
+      }
+      $data['title'] = $msg;
+      $this->load->view('page_cache', $data);
+    }
 }

@@ -13,4 +13,4 @@ configure php.ini
 ___
 
 
-start the redis server
+start redis server

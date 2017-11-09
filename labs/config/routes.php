@@ -55,3 +55,12 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['cache/apc'] = "TestCache/testApc";
 $route['cache/redis'] = "TestCache/testRedis";
+$route['cache/wincache'] = "TestCache/testWinCache";
+
+$route['unitt/addOne'] = "UnitTest/AddsOnePlusOne";
+$route['unitt/isInteger'] = "UnitTest/IfTheVariableIsInteger";
+$route['unitt/isTrue'] = "UnitTest/EvaluateIfIsTrue";
+
+$route['unitt/runTests'] = "UnitTest/runTests";
+
+
